@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3e444f);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #2c2f33;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f9aa33;
+}
+
+#score {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-button {
+    background: #f9aa33;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2c2f33;
+    transition: background 0.3s ease;
+}
+
+.menu-button:hover {
+    background: #ffcc66;
+}
+
+/* Game Box */
+.game-box {
+    margin: 20px 0;
+}
+
+#question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    background: #f9aa33;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2c2f33;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffcc66;
+    transform: translateY(-3px);
+}
+
+/* Timer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f9aa33;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #2c2f33;
+    border: 2px solid #f9aa33;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.menu button {
+    margin: 5px 0;
+}
+
+/* Start Screen */
+#start-screen h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f9aa33;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#start-screen button {
+    font-size: 18px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

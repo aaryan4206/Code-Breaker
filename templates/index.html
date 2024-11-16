@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Breaker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen" class="container">
+        <h1>Code-Breaker</h1>
+        <p>Your All-Time High Score: <span id="high-score">{{ high_score }}</span></p>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="container" style="display:none;">
+        <header>
+            <div id="score">Score: 0</div>
+            <h1>Code-Breaker</h1>
+            <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        </header>
+        <div id="menu" class="menu" style="display:none;">
+            <button onclick="restartGame()">Restart Game</button>
+            <button onclick="endGame()">End Game</button>
+        </div>
+        <div id="game" class="game-box">
+            <h2 id="round">Round 1</h2>
+            <p id="question">Loading question...</p>
+            <p id="points">Points: 0</p>
+            <input type="text" id="answer" placeholder="Enter your answer here">
+            <button onclick="submitAnswer()">Submit Answer</button>
+        </div>
+        <footer>
+            <div id="timer">Time Left: 120s</div>
+        </footer>
+    </div>
+
+    <audio id="correct-audio" src="/static/correct.mp3"></audio>
+    <audio id="incorrect-audio" src="/static/incorrect.mp3"></audio>
+    <script src="/static/script.js"></script>
+</body>
+</html>
